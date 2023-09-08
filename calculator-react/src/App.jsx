@@ -11,7 +11,7 @@ export const ACTIONS={
   DELETE_DIGIT:"delete-digit",
   EVALUATE:"evaluate",
 };
-
+//this code is not running 
 export function evaluate({currentOperand,previousOperand,operation}){
   const prev=parseFloat(previousOperand)
   const current=parseFloat(currentOperand)
@@ -37,9 +37,9 @@ export function evaluate({currentOperand,previousOperand,operation}){
   return computation.toString()
 }
 
-const INTEGER_FORMATTER=new INT1.NumberFormat('en-IN',{
-  maximumFractionDigits:O,
-})
+// const INTEGER_FORMATTER=new Int1.NumberFormat('en-IN',{
+//   maximumFractionDigits:0,
+// })
 
 function formatOperand(operand){
   if(operand==null) return
@@ -75,7 +75,7 @@ function App() {
         <DigitButton digit="4" dispatch={dispatch}/>
         <DigitButton digit="5" dispatch={dispatch}/>
         <DigitButton digit="6" dispatch={dispatch}/>
-        <OperationButton operation="+" dispatch={dispatch}/>
+        <OperationButton operation="/" dispatch={dispatch}/>
         <DigitButton digit="7" dispatch={dispatch}/>
         <DigitButton digit="8" dispatch={dispatch}/>
         <DigitButton digit="9" dispatch={dispatch}/>

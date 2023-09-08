@@ -1,4 +1,4 @@
-import{evaluate,ACTIONS} from '../App.jsx'
+import{evaluate,ACTIONS} from '../App'
 
 export default function reducer(state,{type,payload}){
     switch (type){
